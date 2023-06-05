@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pace Calculator</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <h1>Pace Calculator</h1>
+        <label for="distance">Distance (in km)</label><br>
+        <input type="number" id="distance" name="distance" required><br>
+        <button onclick="setDistance(5)">5k</button>
+        <button onclick="setDistance(10)">10k</button>
+        <button onclick="setDistance(21.0975)">Half Marathon</button>
+        <button onclick="setDistance(42.195)">Full Marathon</button>
+        <br>
+        <label for="hours">Time (Hours)</label><br>
+        <input type="number" id="hours" name="hours" value="0" required><br>
+        <label for="minutes">Time (Minutes)</label><br>
+        <input type="number" id="minutes" name="minutes" value="0" required><br>
+        <label for="seconds">Time (Seconds)</label><br>
+        <input type="number" id="seconds" name="seconds" value="0" required><br>
+        <button onclick="calculatePace()">Calculate Pace</button>
+        <div id="output">Your pace: <span id="pace"></span></div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
